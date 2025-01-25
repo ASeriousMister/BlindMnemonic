@@ -408,7 +408,7 @@ class ThirdWindow:
         	exit() 
         first_words = half_mnemonic_string.split()
         ind_test = 0
-        while ind_test < ((len(mnemonic_list)/2) -1):
+        while ind_test < len(first_words):
             if first_words[ind_test] != mnemonic_list[ind_test]:
                 show_popup('Something has gone damn wrong, consider restarting the process')
                 exit()
